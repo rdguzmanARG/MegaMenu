@@ -70,20 +70,6 @@ export default {
     margin: 0 auto;
     position: relative;
   }
-
-  .mm-icon {
-    cursor: pointer;
-    width: fit-content;
-    padding: 10px 15px;
-    color: #666666;
-    display: flex;
-    gap: 10px;
-    position: relative;
-
-    &.home {
-      color: #ff8300;
-    }
-  }
 }
 
 .mm-backround {

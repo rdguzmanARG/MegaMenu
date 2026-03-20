@@ -59,6 +59,6 @@ const data: MenuItem[] = [
       }
     ]
   },
-  { text: 'Contact', url: '/contact' }
+  { text: 'Contact', url: '/contact', iconClass: 'fas fa-envelope' }
 ];
 </script>
