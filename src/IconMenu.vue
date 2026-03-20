@@ -5,7 +5,7 @@
   </div>
 </template>
 
-<script setup lang="TS">
+<script lang="ts">
 export default {
   name: "IconMenu",
   props: {

@@ -1,9 +1,9 @@
 <template>
   <div class="mm-options">
-    <span @click="toggleMenu">{{ label }}</span>
+    <span @mouseover="selectItem(items?.[0]); toggleMenu(); hoveredIndex = 0;">{{ label }}</span>
     <div v-if="isOpen" class="mm-options-container">
       <div class="mm-options-n1" @mouseover="hoveredIndex = index" :class="{ 'hovered': hoveredIndex === index }"
-        v-for="(item, index) in items" :key="index" @click.stop="selectItem(item)">
+        v-for="(item, index) in items" :key="index" @click="selectItem(item)">
         <div class="mm-options-n1-title">{{ item.text }}</div>
         <div class="mm-options-n1-container">
 
@@ -33,7 +33,7 @@ export default {
   name: "DropdownMenu",
   props: {
     label: { type: String, required: true },
-    items: { type: Array as PropType<MenuItem[]>, default: () => [] },
+    items: { type: Array as PropType<MenuItem[]> },
     isOpen: { type: Boolean, default: false } // controlled by parent
   },
   data() {
@@ -43,13 +43,13 @@ export default {
   },
   methods: {
     toggleSubmenu() {
-
       console.log("Toggle submenu");
     },
     toggleMenu() {
       this.$emit("toggle", this.label); // notify parent which menu was clicked
     },
-    selectItem(item: MenuItem) {
+    selectItem(item?: MenuItem) {
+      console.log(`Selected item: ${item?.text}`);
       this.$emit("item-selected", { label: this.label, value: item });
     }
   }
@@ -124,14 +124,14 @@ export default {
 }
 
 .mm-options-n1-container {
-  width: 75%;
+  width: 73%;
   color: #333;
   cursor: pointer;
   display: none;
   position: absolute;
   top: 0;
-  height: calc(100vh);
-  left: 25%;
+  height: calc(100vh - 70px);
+  left: 26%;
   padding: 10px;
   flex-wrap: wrap;
   gap: 20px;

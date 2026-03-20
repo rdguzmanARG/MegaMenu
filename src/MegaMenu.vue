@@ -17,7 +17,7 @@ export default {
   },
   created() {
     // Log props and data when the component is created
-    console.log('Component data:', this.items);
+    // console.log('Component data:', this.items);
   },
   methods: {
     handleToggle(label: string) {
