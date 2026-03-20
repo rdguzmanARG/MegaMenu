@@ -23,9 +23,13 @@ export default {
     handleToggle(label: string) {
       // if the same menu is clicked, close it; otherwise open the new one
       this.openMenu = this.openMenu === label ? null : label;
+      console.log(`Toggled menu: ${label}, openMenu is now: ${this.openMenu}`);
     },
     handleSelection({ label, value }: { label: string; value: string; }) {
       console.log(`Selected "${value}" from "${label}"`);
+      this.openMenu = null; // close after selection
+    },
+    close() {
       this.openMenu = null; // close after selection
     }
   }
@@ -36,9 +40,6 @@ export default {
 <template>
   <div class="mm-container">
     <div class="mm-content">
-      <!-- <div class="mm-icon home">
-        <i class="fas fa-home"></i>
-      </div> -->
       <div v-for="item in items" :key="item.text">
         <DropdownMenu v-if="item.items && item.items.length > 0" :label="item.text" :items="item.items"
           :isOpen="openMenu === item.text" @toggle="handleToggle" @item-selected="handleSelection" />
@@ -46,10 +47,13 @@ export default {
       </div>
     </div>
   </div>
+  <div @mouseenter="close" v-show="openMenu !== null" class=" mm-backround">
+  </div>
 </template>
 
 <style scoped>
 .mm-container {
+  z-index: 10;
   height: 40px;
   box-shadow:
     0 2px 2px 0 rgba(0, 0, 0, 0.14),
@@ -80,5 +84,15 @@ export default {
       color: #ff8300;
     }
   }
+}
+
+.mm-backround {
+  background-color: rgba(0, 0, 0, 0.01);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
 }
 </style>

@@ -91,7 +91,7 @@ export default {
 
 .mm-options-container {
   position: absolute;
-  top: 42px;
+  top: 41px;
   left: 0;
   right: 0;
   background: #fff;
