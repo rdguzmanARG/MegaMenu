@@ -1,26 +1,3 @@
-<template>
-  <div class="mm-options">
-    <span @mouseover="selectItem(items?.[0]); toggleMenu(); hoveredIndex = 0;">{{ label }}</span>
-    <div v-if="isOpen" class="mm-options-container">
-      <div class="mm-options-n1" @mouseover="hoveredIndex = index" :class="{ 'hovered': hoveredIndex === index }"
-        v-for="(item, index) in items" :key="index" @click="selectItem(item)">
-        <div class="mm-options-n1-title">{{ item.text }}</div>
-        <div class="mm-options-n1-container">
-
-          <div class="mm-options-n2" v-for="(subitem, index) in item.items" :key="index">
-            <div class="mm-options-n2-title">{{ subitem.text }}</div>
-            <div class="mm-options-n2-container">
-              <div v-for="(subitem2, index) in subitem.items" :key="index">
-                <div class="mm-options-n3-text">{{ subitem2.text }}</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</template>
-
 <script lang="ts">
 import type { PropType } from 'vue';
 
@@ -56,8 +33,30 @@ export default {
 };
 </script>
 
+<template>
+  <div class="mm-options">
+    <span @mouseover="selectItem(items?.[0]); toggleMenu(); hoveredIndex = 0;">{{ label }}</span>
+    <div v-if="isOpen" class="mm-options-container">
+      <div class="mm-options-n1" @mouseover="hoveredIndex = index" :class="{ 'hovered': hoveredIndex === index }"
+        v-for="(item, index) in items" :key="index" @click="selectItem(item)">
+        <div class="mm-options-n1-title">{{ item.text }}</div>
+        <div class="mm-options-n1-container">
 
-<style scoped>
+          <div class="mm-options-n2" v-for="(subitem, index) in item.items" :key="index">
+            <div class="mm-options-n2-title">{{ subitem.text }}</div>
+            <div class="mm-options-n2-container">
+              <div v-for="(subitem2, index) in subitem.items" :key="index">
+                <div class="mm-options-n3-text">{{ subitem2.text }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<style>
 .mm-options {
   cursor: pointer;
   width: fit-content;

@@ -1,10 +1,3 @@
-<template>
-  <div @click="toggleMenu" class="mmenu-item mm-icon">
-    <i :class="iconClass"></i>
-    <span>{{ label }}</span>
-  </div>
-</template>
-
 <script lang="ts">
 export default {
   name: "IconMenu",
@@ -20,8 +13,14 @@ export default {
 };
 </script>
 
+<template>
+  <div @click="toggleMenu" class="mmenu-item mm-icon">
+    <i :class="iconClass"></i>
+    <span>{{ label }}</span>
+  </div>
+</template>
 
-<style scoped>
+<style>
 .mm-icon {
   cursor: pointer;
   width: fit-content;

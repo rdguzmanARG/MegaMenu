@@ -36,7 +36,6 @@ export default {
 };
 </script>
 
-
 <template>
   <div class="mm-container">
     <div class="mm-content">
@@ -51,7 +50,7 @@ export default {
   </div>
 </template>
 
-<style scoped>
+<style>
 .mm-container {
   z-index: 10;
   height: 40px;

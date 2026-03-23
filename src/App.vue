@@ -1,10 +1,5 @@
-<!-- App.vue -->
-<template>
-  <MegaMenu :items="data" />
-</template>
-
 <script setup lang="ts">
-import MegaMenu, { type MenuItem } from './MegaMenu.vue';
+import MegaMenu, { type MenuItem } from './vue-components/MegaMenu.vue';
 
 const data: MenuItem[] = [
   { text: 'Home', iconClass: 'fas fa-home' },
@@ -59,6 +54,11 @@ const data: MenuItem[] = [
       }
     ]
   },
-  { text: 'Contact', url: '/contact', iconClass: 'fas fa-envelope' }
+  { text: 'Contact', url: '/contact', iconClass: 'fas fa-envelope' },
+
 ];
 </script>
+
+<template>
+  <MegaMenu :items="data" />
+</template>
