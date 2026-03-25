@@ -60,6 +60,20 @@ export default {
 </template>
 
 <style>
+.active {
+  .mm-options {
+    background-color: #e8e8e8;
+    padding: 30px 10px;
+    border-bottom: rgba(0, 0, 0, 0.13) 1px solid;
+
+    .mm-options-mobile {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
+    }
+  }
+}
+
 .mm-options {
   cursor: pointer;
   width: fit-content;
@@ -70,6 +84,7 @@ export default {
   color: #666666;
   padding-left: 20px;
   padding-right: 20px;
+  text-transform: uppercase;
 
   span::after {
     color: #7b7b7b;
@@ -92,6 +107,8 @@ export default {
 }
 
 .mm-options-desktop {
+  display: flex;
+
   @media screen and (max-width: 1024px) {
     display: none;
   }
