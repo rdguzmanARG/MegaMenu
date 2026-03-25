@@ -15,7 +15,7 @@ export default {
   },
   data() {
     return {
-      hoveredIndex: null as number | null
+      selectedIndex: null as number | null
     };
   },
   methods: {
@@ -35,12 +35,15 @@ export default {
 
 <template>
   <div class="mm-options">
-    <span @mouseover="selectItem(items?.[0]); toggleMenu(); hoveredIndex = 0;">{{ label }}</span>
+    <span class="mm-options-desktop" @mouseover="toggleMenu(); selectedIndex = 0;">{{ label
+    }}</span>
+    <span class="mm-options-mobile" @click="toggleMenu(); selectedIndex = 0;">{{ label
+    }}</span>
     <div v-if="isOpen" class="mm-options-container">
-      <div class="mm-options-n1" @mouseover="hoveredIndex = index" :class="{ 'hovered': hoveredIndex === index }"
-        v-for="(item, index) in items" :key="index" @click="selectItem(item)">
+      <div class="mm-options-n1" @mouseover="selectedIndex = index" :class="{ 'selected': selectedIndex === index }"
+        v-for="(item, index) in items" :key="index" @click="selectedIndex = index">
         <div class="mm-options-n1-title">{{ item.text }}</div>
-        <div class="mm-options-n1-container">
+        <div v-if="item.items && item.items.length > 0" class="mm-options-n1-container">
 
           <div class="mm-options-n2" v-for="(subitem, index) in item.items" :key="index">
             <div class="mm-options-n2-title">{{ subitem.text }}</div>
@@ -60,7 +63,7 @@ export default {
 .mm-options {
   cursor: pointer;
   width: fit-content;
-
+  width: 100%;
   display: inline-block;
   cursor: pointer;
   padding: 10px;
@@ -88,6 +91,20 @@ export default {
   }
 }
 
+.mm-options-desktop {
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+
+.mm-options-mobile {
+  display: none;
+
+  @media screen and (max-width: 1024px) {
+    display: block;
+  }
+}
+
 .mm-options-container {
   position: absolute;
   top: 41px;
@@ -97,6 +114,11 @@ export default {
   border: 1px solid #ccc;
   min-width: 150px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+
+  @media screen and (max-width: 1024px) {
+    position: relative;
+    top: 10px
+  }
 }
 
 .mm-options-n1 {
@@ -105,9 +127,18 @@ export default {
   gap: 10px;
   width: 25%;
 
-  &.hovered {
+  @media screen and (max-width: 1024px) {
+    width: unset;
+  }
+
+  &.selected {
     border-left: 3px solid #ffa626;
     background: #f0f0f0;
+
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+      border-left: unset
+    }
 
     .mm-options-n1-container {
       display: flex;
@@ -134,6 +165,13 @@ export default {
   padding: 10px;
   flex-wrap: wrap;
   gap: 20px;
+
+  @media screen and (max-width: 1024px) {
+    position: relative;
+    height: unset;
+    width: unset;
+    left: unset;
+  }
 }
 
 .mm-options-n2 {

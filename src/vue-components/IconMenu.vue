@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-  <div @click="toggleMenu" class="mmenu-item mm-icon">
+  <div @click="toggleMenu" @mouseover="toggleMenu" class="mmenu-item mm-icon">
     <i :class="iconClass"></i>
     <span>{{ label }}</span>
   </div>
