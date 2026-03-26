@@ -60,7 +60,7 @@ export default {
             <div class="mm-options-n2-title">{{ subitem.text }}</div>
             <div class="mm-options-n2-container">
               <div v-for="(subitem2, index) in subitem.items" :key="index">
-                <div class="mm-options-n3-text">{{ subitem2.text }}</div>
+                <a class="mm-options-n3-text" :href="subitem2.url" target="_blank">{{ subitem2.text }}</a>
               </div>
             </div>
           </div>
@@ -68,15 +68,15 @@ export default {
       </div>
       <div class="mm-options-mobile-n1" @click="toggleSelection(index)" :class="{ 'selected': selectedIndex === index }"
         v-for="(item, index) in items" :key="index">
-        <i :class="item.iconClass"></i>
-        <div class="mm-options-n1-title">{{ item.text }}</div>
+
+        <div class="mm-options-n1-title"><i :class="item.iconClass"></i> {{ item.text }}</div>
         <div v-if="item.items && item.items.length > 0" class="mm-options-n1-container">
 
           <div class="mm-options-n2" v-for="(subitem, index) in item.items" :key="index">
             <div class="mm-options-n2-title">{{ subitem.text }}</div>
             <div class="mm-options-n2-container">
               <div v-for="(subitem2, index) in subitem.items" :key="index">
-                <div class="mm-options-n3-text">{{ subitem2.text }}</div>
+                <a class="mm-options-n3-text" :href="subitem2.url" target="_blank">{{ subitem2.text }}</a>
               </div>
             </div>
           </div>
@@ -111,7 +111,6 @@ export default {
   cursor: pointer;
 
   color: #666666;
-  text-transform: uppercase;
 
   span::after {
     color: #7b7b7b;
@@ -134,6 +133,7 @@ export default {
   padding: 10px;
   align-items: center;
   gap: 10px;
+  text-transform: uppercase;
 
   @media screen and (max-width: 1024px) {
     display: none;
@@ -142,6 +142,8 @@ export default {
 
 .mm-options-mobile {
   display: none;
+  text-transform: uppercase;
+
 
   @media screen and (max-width: 1024px) {
     display: flex;
@@ -214,6 +216,7 @@ export default {
 .mm-options-n1-title {
   color: #333;
   cursor: pointer;
+
 }
 
 .mm-options-n1-container {

@@ -197,13 +197,15 @@ export default {
 
 }
 
-.mm-backround {
-  background-color: rgba(0, 0, 0, 0.01);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -10;
+@media screen and (min-width: 1024px) {
+  .mm-backround {
+    background-color: rgba(0, 0, 0, 0.01);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+  }
 }
 </style>
