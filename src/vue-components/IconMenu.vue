@@ -4,6 +4,7 @@ export default {
   props: {
     iconClass: { type: String, required: true },
     label: { type: String, required: true },
+    url: { type: String, required: true },
   },
   methods: {
     toggleMenu() {
@@ -16,11 +17,11 @@ export default {
 <template>
   <div @mouseenter="toggleMenu" class="mmenu-item-desktop mm-icon">
     <i :class="iconClass"></i>
-    <span>{{ label }}</span>
+    <a :href="url" target="_blank">{{ label }}</a>
   </div>
   <div @click="toggleMenu" class="mmenu-item-mobile mm-icon">
     <i :class="iconClass"></i>
-    <span>{{ label }}</span>
+    <a :href="url" target="_blank">{{ label }}</a>
   </div>
 </template>
 
@@ -51,6 +52,11 @@ export default {
   gap: 10px;
   position: relative;
   align-items: center;
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
 
   &.home {
     color: #ff8300;
