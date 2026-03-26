@@ -24,7 +24,7 @@ export default {
 .mm-icon {
   cursor: pointer;
   width: fit-content;
-  padding: 10px 15px;
+  padding: 10px;
   color: #666666;
   display: flex;
   gap: 10px;

@@ -21,6 +21,10 @@ export default {
     // console.log('Component data:', this.items);
   },
   methods: {
+    handleOpen(label: string) {
+      // if the same menu is clicked, close it; otherwise open the new one
+      this.openMenu = label;
+    },
     handleToggle(label: string) {
       // if the same menu is clicked, close it; otherwise open the new one
       this.openMenu = this.openMenu === label ? null : label;
@@ -32,6 +36,7 @@ export default {
     },
     close() {
       this.openMenu = null; // close after selection
+      this.mobileMenuIsOpen = false;
     },
     openMobileMenu() {
       this.mobileMenuIsOpen = !this.mobileMenuIsOpen;
@@ -45,7 +50,7 @@ export default {
     <div class="mm-content" :class="{ active: mobileMenuIsOpen }">
       <div v-for="item in items" :key="item.text">
         <DropdownMenu v-if="item.items && item.items.length > 0" :label="item.text" :items="item.items"
-          :isOpen="openMenu === item.text" @toggle="handleToggle" @item-selected="handleSelection" />
+          :isOpen="openMenu === item.text" @open="handleOpen" @toggle="handleToggle" @item-selected="handleSelection" />
         <IconMenu v-else :label="item.text" :iconClass="item.iconClass" @toggle="handleToggle" />
       </div>
     </div>
@@ -54,7 +59,7 @@ export default {
     </div>
     <div class="mm-hamburger-title">Intra - Ternium</div>
   </div>
-  <div @mouseenter="close" v-show="openMenu !== null" class=" mm-backround">
+  <div @mouseenter="close" v-show="openMenu !== null" class="mm-backround">
   </div>
 </template>
 
@@ -70,17 +75,17 @@ export default {
   border-bottom: solid 1px #e7e7e7;
   display: flex;
 
-  &.active {
-    height: 100vh;
-    background-color: #e8e8e8 !important;
-
-    .mm-hamburger-title {
-      display: none;
-    }
-  }
-
   @media screen and (max-width: 1024px) {
     height: 48px;
+
+    &.active {
+      height: 100vh;
+      background-color: #e8e8e8 !important;
+
+      .mm-hamburger-title {
+        display: none;
+      }
+    }
   }
 
   .mm-content {
@@ -99,6 +104,7 @@ export default {
 
       &.active {
         display: flex;
+        padding: 0;
       }
     }
   }
@@ -188,14 +194,16 @@ export default {
     }
   }
 
-  .mm-backround {
-    background-color: rgba(0, 0, 0, 0.01);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -10;
-  }
+
+}
+
+.mm-backround {
+  background-color: rgba(0, 0, 0, 0.01);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
 }
 </style>

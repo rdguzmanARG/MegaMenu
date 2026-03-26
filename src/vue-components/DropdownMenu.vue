@@ -3,6 +3,8 @@ import type { PropType } from 'vue';
 
 interface MenuItem {
   text: string;
+  iconClass?: string;
+  url?: string;
   items?: MenuItem[];
 }
 
@@ -19,29 +21,38 @@ export default {
     };
   },
   methods: {
-    toggleSubmenu() {
-      console.log("Toggle submenu");
+    toggleSelection(label: number) {
+      if (this.selectedIndex === label) {
+        this.selectedIndex = null; // deselect if same item is clicked
+      } else {
+        this.selectedIndex = label; // select new item
+      }
     },
+    openSelection(label: number) {
+      this.selectedIndex = label; // select new item
+    },
+
     toggleMenu() {
       this.$emit("toggle", this.label); // notify parent which menu was clicked
     },
-    selectItem(item?: MenuItem) {
-      console.log(`Selected item: ${item?.text}`);
-      this.$emit("item-selected", { label: this.label, value: item });
-    }
+    openMenu() {
+      this.$emit("open", this.label); // notify parent which menu was clicked
+    },
+
   }
 };
 </script>
 
 <template>
   <div class="mm-options">
-    <span class="mm-options-desktop" @mouseover="toggleMenu(); selectedIndex = 0;">{{ label
+    <span class="mm-options-desktop" @mouseenter="openMenu(); selectedIndex = null;">{{ label
     }}</span>
-    <span class="mm-options-mobile" @click="toggleMenu(); selectedIndex = 0;">{{ label
+    <span class="mm-options-mobile" @click="toggleMenu(); selectedIndex = null;">{{ label
     }}</span>
     <div v-if="isOpen" class="mm-options-container">
-      <div class="mm-options-n1" @mouseover="selectedIndex = index" :class="{ 'selected': selectedIndex === index }"
-        v-for="(item, index) in items" :key="index" @click="selectedIndex = index">
+      <div class="mm-options-desktop-n1" @mouseenter="openSelection(index)"
+        :class="{ 'selected': selectedIndex === index }" v-for="(item, index) in items" :key="index">
+        <i :class="item.iconClass"></i>
         <div class="mm-options-n1-title">{{ item.text }}</div>
         <div v-if="item.items && item.items.length > 0" class="mm-options-n1-container">
 
@@ -55,21 +66,39 @@ export default {
           </div>
         </div>
       </div>
+      <div class="mm-options-mobile-n1" @click="toggleSelection(index)" :class="{ 'selected': selectedIndex === index }"
+        v-for="(item, index) in items" :key="index">
+        <i :class="item.iconClass"></i>
+        <div class="mm-options-n1-title">{{ item.text }}</div>
+        <div v-if="item.items && item.items.length > 0" class="mm-options-n1-container">
+
+          <div class="mm-options-n2" v-for="(subitem, index) in item.items" :key="index">
+            <div class="mm-options-n2-title">{{ subitem.text }}</div>
+            <div class="mm-options-n2-container">
+              <div v-for="(subitem2, index) in subitem.items" :key="index">
+                <div class="mm-options-n3-text">{{ subitem2.text }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </template>
 
 <style>
-.active {
-  .mm-options {
-    background-color: #e8e8e8;
-    padding: 30px 10px;
-    border-bottom: rgba(0, 0, 0, 0.13) 1px solid;
+@media screen and (max-width: 1024px) {
+  .active {
+    .mm-options {
+      background-color: #e8e8e8;
 
-    .mm-options-mobile {
-      display: flex;
-      justify-content: space-between;
-      padding: 0 10px;
+      border-bottom: rgba(0, 0, 0, 0.13) 1px solid;
+
+      .mm-options-mobile {
+        justify-content: space-between;
+        padding: 10px;
+      }
     }
   }
 }
@@ -80,15 +109,12 @@ export default {
   width: 100%;
   display: inline-block;
   cursor: pointer;
-  padding: 10px;
+
   color: #666666;
-  padding-left: 20px;
-  padding-right: 20px;
   text-transform: uppercase;
 
   span::after {
     color: #7b7b7b;
-    display: inline-block;
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
@@ -100,14 +126,14 @@ export default {
     line-height: 10px;
     margin-left: 10px;
     position: relative;
-    right: -7px;
-    text-align: right;
-    top: 3px;
   }
 }
 
 .mm-options-desktop {
   display: flex;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
 
   @media screen and (max-width: 1024px) {
     display: none;
@@ -118,7 +144,8 @@ export default {
   display: none;
 
   @media screen and (max-width: 1024px) {
-    display: block;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -133,14 +160,34 @@ export default {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 
   @media screen and (max-width: 1024px) {
+    box-shadow: unset;
     position: relative;
-    top: 10px
+    top: 0;
+    border: none;
   }
 }
 
-.mm-options-n1 {
-  padding: 12px;
+.mm-options-mobile-n1 {
+  display: none;
+}
+
+.mm-options-desktop-n1 {
   display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  .mm-options-mobile-n1 {
+    display: flex;
+  }
+
+  .mm-options-desktop-n1 {
+    display: none;
+  }
+}
+
+.mm-options-desktop-n1,
+.mm-options-mobile-n1 {
+  padding: 12px;
   gap: 10px;
   width: 25%;
 
@@ -160,7 +207,6 @@ export default {
     .mm-options-n1-container {
       display: flex;
       background: #f0f0f0;
-
     }
   }
 }
@@ -191,6 +237,7 @@ export default {
   }
 }
 
+
 .mm-options-n2 {
   padding: 10px;
 }
@@ -203,6 +250,9 @@ export default {
 
 .mm-options-n2-container {
   padding: 10px;
+
+
+
 }
 
 .mm-options-n3-text {

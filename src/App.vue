@@ -4,59 +4,53 @@ import MegaMenu, { type MenuItem } from './vue-components/MegaMenu.vue';
 const data: MenuItem[] = [
   { text: 'Home', iconClass: 'fas fa-home' },
   {
-    text: 'Services', items: [
-      { text: 'Web Development', url: '/services/web' },
-      { text: 'Mobile Development', url: '/services/mobile' },
-      { text: 'SEO Optimization', url: '/services/seo' }
+    text: 'Gestión', items: [
+      {
+        text: 'Ternium',
+        iconClass: 'fas fa-signal',
+        items: [
+          {
+            text: 'Visual Flash', items: [
+              { text: 'Ternium', url: '#' },
+              { text: 'Argentina', url: '#' },
+              { text: 'Brasil', url: '#' },
+              { text: 'Internacional', url: '#' },
+              { text: 'México', url: '#' }
+            ]
+          },
+          {
+            text: 'Site', items: [
+              { text: 'Centroamerica', url: '#' },
+              { text: 'Solombia', url: '#' },
+              { text: 'USA', url: '#' },
+            ]
+          },
+        ]
+      }, {
+        text: 'Seguridad y Medio Ambiente',
+        iconClass: 'fas fa-hard-hat',
+        items: [
+          { text: 'Gestional', items: [{ text: "Site seguridad", url: '#' }, { text: "Site medio ambiente", url: '#' }] },
+          { text: 'Transaccional', url: '#' },
+          { text: 'Política y Procedimientos', url: '#' }
+        ]
+      }, { text: 'Industrial', iconClass: 'fas fa-industry', url: '/services/seo' },
+      { text: 'Negocios', iconClass: 'fas fa-briefcase', url: '/services/seo' },
+      { text: 'Calidad', iconClass: 'fas fa-star', url: '/services/seo' },
+      { text: 'Planeamiento', iconClass: 'fas fa-chart-line', url: '/services/seo' }
     ]
   },
   {
-    text: 'Products', items: [
+    text: 'Servicios',
+    items: [
       {
-        text: 'Laptops', url: '/products/laptops', items: [
-          {
-            text: 'Gaming Laptops', url: '/products/laptops/gaming', items: [
-              { text: 'Alienware', url: '/products/laptops/gaming/alienware' },
-              { text: 'ASUS ROG', url: '/products/laptops/gaming/asus-rog' },
-              { text: 'MSI', url: '/products/laptops/gaming/msi' },
-              { text: 'Lenovo Legion', url: '/products/laptops/gaming/lenovo-legion' }
-            ]
-          },
-          {
-            text: 'Ultrabooks', url: '/products/laptops/ultrabooks', items: [
-              { text: 'Dell XPS', url: '/products/laptops/ultrabooks/dell-xps' },
-              { text: 'HP Spectre', url: '/products/laptops/ultrabooks/hp-spectre' },
-              { text: 'MacBook Air', url: '/products/laptops/ultrabooks/macbook-air' },
-              { text: 'ASUS ZenBook', url: '/products/laptops/ultrabooks/asus-zenbook' }
-            ]
-          },
-          {
-            text: 'Business Laptops', url: '/products/laptops/business', items: [
-              { text: 'Lenovo ThinkPad que pasa si es mucho mas largo', url: '/products/laptops/business/lenovo-thinkpad' },
-              { text: 'Dell Latitude', url: '/products/laptops/business/dell-latitude' },
-              { text: 'HP EliteBook', url: '/products/laptops/business/hp-elitebook' },
-              { text: 'Microsoft Surface', url: '/products/laptops/business/microsoft-surface' }
-            ]
-          }
-        ]
-      },
-      {
-        text: 'Smartphones', url: '/products/smartphones', items: [
-          { text: 'Android Phones', url: '/products/smartphones/android' },
-          { text: 'iPhones', url: '/products/smartphones/iphone' }
-        ]
-      },
-      {
-        text: 'Accessories', url: '/products/accessories', items: [
-          { text: 'Headphones', url: '/products/accessories/headphones' },
-          { text: 'Chargers', url: '/products/accessories/chargers' }
-        ]
-      }
-    ]
-  },
-  { text: 'Contact', url: '/contact', iconClass: 'fas fa-envelope' },
-
-];
+        text: 'Información', iconClass: 'fas fa-info', url: '#'
+      }, {
+        text: 'Utilidades', iconClass: 'fas fa-wrench', url: '#'
+      }, {
+        text: 'Enlaces', iconClass: 'fas fa-external-link-alt', url: '#'
+      }]
+  }, { text: 'Mi RH', iconClass: 'far fa-address-card', url: '#' }];
 </script>
 
 <template>
