@@ -14,22 +14,42 @@ export default {
 </script>
 
 <template>
-  <div @click="toggleMenu" @mouseover="toggleMenu" class="mmenu-item mm-icon">
+  <div @mouseenter="toggleMenu" class="mmenu-item-desktop mm-icon">
+    <i :class="iconClass"></i>
+    <span>{{ label }}</span>
+  </div>
+  <div @click="toggleMenu" class="mmenu-item-mobile mm-icon">
     <i :class="iconClass"></i>
     <span>{{ label }}</span>
   </div>
 </template>
 
 <style>
+.mmenu-item-mobile {
+  display: none;
+}
+
+.mmenu-item-desktop {
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  .mmenu-item-mobile {
+    display: flex;
+  }
+
+  .mmenu-item-desktop {
+    display: none;
+  }
+}
+
 .mm-icon {
   cursor: pointer;
   width: fit-content;
   padding: 10px;
   color: #666666;
-  display: flex;
   gap: 10px;
   position: relative;
-  display: flex;
   align-items: center;
 
   &.home {
