@@ -2,7 +2,7 @@
 import MegaMenu, { type MenuItem } from './vue-components/MegaMenu.vue';
 
 const data: MenuItem[] = [
-  { text: 'Home', iconClass: 'fas fa-home' },
+  { text: 'Home', url: '#', iconClass: 'fas fa-home' },
   {
     text: 'Gestión', items: [
       {

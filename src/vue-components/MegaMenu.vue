@@ -51,7 +51,7 @@ export default {
       <div v-for="item in items" :key="item.text">
         <DropdownMenu v-if="item.items && item.items.length > 0" :label="item.text" :items="item.items"
           :isOpen="openMenu === item.text" @open="handleOpen" @toggle="handleToggle" @item-selected="handleSelection" />
-        <IconMenu v-else :label="item.text" :iconClass="item.iconClass" @toggle="handleToggle" />
+        <IconMenu v-else :url="item.url" :label="item.text" :iconClass="item.iconClass" @toggle="handleToggle" />
       </div>
     </div>
     <div class="mm-hamburger" :class="{ active: mobileMenuIsOpen }" @click="openMobileMenu">
