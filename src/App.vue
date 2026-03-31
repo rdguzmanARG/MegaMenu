@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import MegaMenu, { type MenuItem } from './vue-components/MegaMenu.vue';
 
-const data: MenuItem[] = [
+const data2: MenuItem[] = [
   { text: 'Home', url: '#', iconClass: 'fas fa-home' },
   {
     text: 'Gestión', items: [
@@ -51,6 +51,9 @@ const data: MenuItem[] = [
         text: 'Enlaces', iconClass: 'fas fa-external-link-alt', url: '#'
       }]
   }, { text: 'Mi RH', iconClass: 'far fa-address-card', url: '#' }];
+
+import data from './data.json';
+//const data: MenuItem[] = []; 
 </script>
 
 <template>

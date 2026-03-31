@@ -1,0 +1,829 @@
+[
+  {
+    "text": "Home",
+    "url": "#",
+    "iconClass": "fas fa-home"
+  },
+  {
+    "text": "About Tenaris",
+    "items": [
+      {
+        "text": "General",
+        "iconUrl": "/public/images/Iconos_GAP-02.svg",
+        "url": "https://no-host-siteset/en/topbar-menu/about-tenaris/general",
+        "items": [
+          {
+            "text": "Mission",
+            "url": "https://no-host-siteset/en/topbar-menu/about-tenaris/general/mission",
+            "items": []
+          },
+          {
+            "text": "Values",
+            "url": "https://no-host-siteset/en/topbar-menu/about-tenaris/general/values",
+            "items": []
+          },
+          {
+            "text": "Tenaris Way",
+            "url": "https://no-host-siteset/en/topbar-menu/about-tenaris/general/tenaris-way",
+            "items": []
+          },
+          {
+            "text": "Institutional Presentations",
+            "url": "https://no-host-siteset/en/topbar-menu/about-tenaris/general/institutional-presentations",
+            "items": []
+          },
+          {
+            "text": "Boilerplates",
+            "url": "https://no-host-siteset/en/topbar-menu/about-tenaris/general/boilerplates",
+            "items": []
+          },
+          {
+            "text": "Organizational Chart",
+            "url": "https://no-host-siteset/en/topbar-menu/about-tenaris/general/organizational-chart",
+            "items": []
+          },
+          {
+            "text": "Physical Layout (TPL)",
+            "url": "https://no-host-siteset/en/topbar-menu/about-tenaris/general/physical-layout-tpl",
+            "items": []
+          },
+          {
+            "text": "Annual Report",
+            "url": "https://no-host-siteset/en/topbar-menu/about-tenaris/general/annual-report",
+            "items": []
+          },
+          {
+            "text": "Sustainability Information for Customers",
+            "url": "https://no-host-siteset/en/topbar-menu/about-tenaris/general/sustainability-information-for-customers",
+            "items": []
+          },
+          {
+            "text": "Sustainability Statement",
+            "url": "https://no-host-siteset/en/topbar-menu/about-tenaris/general/sustainability-statement",
+            "items": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Governance",
+    "items": [
+      {
+        "text": "Policies \u0026 Procedures",
+        "iconUrl": "/public/images/Iconos_GAP-03.svg",
+        "url": "https://no-host-siteset/en/topbar-menu/governance/policies-procedures",
+        "items": [
+          {
+            "text": "IDM - Tenaris Documents",
+            "url": "https://no-host-siteset/en/topbar-menu/governance/policies-procedures/idm-tenaris-documents",
+            "items": []
+          },
+          {
+            "text": "QHSE Policy",
+            "url": "https://no-host-siteset/en/topbar-menu/governance/policies-procedures/qhse-policy",
+            "items": []
+          },
+          {
+            "text": "Basic Safety Rules",
+            "url": "https://no-host-siteset/en/topbar-menu/governance/policies-procedures/basic-safety-rules",
+            "items": []
+          },
+          {
+            "text": "Crisis Management Guidelines",
+            "url": "https://no-host-siteset/en/topbar-menu/governance/policies-procedures/crisis-management-guidelines",
+            "items": []
+          },
+          {
+            "text": "Techint\u2019s document on Catastrophic Situations",
+            "url": "https://no-host-siteset/en/topbar-menu/governance/policies-procedures/techint-s-document-on-catastrophic-situations",
+            "items": []
+          },
+          {
+            "text": "Data Leak Prevention",
+            "url": "https://no-host-siteset/en/topbar-menu/governance/policies-procedures/data-leak-prevention",
+            "items": []
+          },
+          {
+            "text": "Guidelines on Requests of Publicity from Third Parties",
+            "url": "https://no-host-siteset/en/topbar-menu/governance/policies-procedures/guidelines-on-requests-of-publicity-from-third-parties",
+            "items": []
+          }
+        ]
+      },
+      {
+        "text": "Business Ethics",
+        "iconUrl": "/public/images/Iconos_GAP-05.svg",
+        "url": "https://no-host-siteset/en/topbar-menu/governance/business-ethics",
+        "items": [
+          {
+            "text": "Code of Conduct",
+            "url": "https://no-host-siteset/en/topbar-menu/governance/business-ethics/code-of-conduct",
+            "items": []
+          },
+          {
+            "text": "Policy on Business Conduct",
+            "url": "https://no-host-siteset/en/topbar-menu/governance/business-ethics/policy-on-business-conduct",
+            "items": []
+          },
+          {
+            "text": "Business Conduct and Internal Control Site",
+            "url": "https://no-host-siteset/en/topbar-menu/governance/business-ethics/business-conduct-and-internal-control-site",
+            "items": []
+          },
+          {
+            "text": "BCCO Office Responds",
+            "url": "https://no-host-siteset/en/topbar-menu/governance/business-ethics/bcco-office-responds",
+            "items": []
+          },
+          {
+            "text": "Conflicts of Interest Declaration Form ENG",
+            "url": "https://no-host-siteset/en/topbar-menu/governance/business-ethics/conflicts-of-interest-declaration-form-eng",
+            "items": []
+          },
+          {
+            "text": "Compliance Line",
+            "url": "https://no-host-siteset/en/topbar-menu/governance/business-ethics/compliance-line",
+            "items": []
+          }
+        ]
+      },
+      {
+        "text": "Compliance Assurance",
+        "iconUrl": "/public/images/Iconos_GAP-02.svg",
+        "url": "https://no-host-siteset/en/topbar-menu/governance/compliance-assurance",
+        "items": [
+          {
+            "text": "Normative System (IDM) Chatbot",
+            "url": "https://no-host-siteset/en/topbar-menu/governance/compliance-assurance/normative-system-idm-chatbot",
+            "items": []
+          },
+          {
+            "text": "Policies \u0026 Procedures-Process Maps",
+            "url": "https://no-host-siteset/en/topbar-menu/governance/compliance-assurance/policies-procedures-process-maps",
+            "items": []
+          },
+          {
+            "text": "Compliance Newsletters",
+            "url": "https://no-host-siteset/en/topbar-menu/governance/compliance-assurance/compliance-newsletters",
+            "items": []
+          },
+          {
+            "text": "Related Parties \u0026 Corporate Governance App",
+            "url": "https://no-host-siteset/en/topbar-menu/governance/compliance-assurance/related-parties-corporate-governance-app",
+            "items": []
+          },
+          {
+            "text": "E-SOC: Corporate Records \u0026 Entity Management",
+            "url": "https://no-host-siteset/en/topbar-menu/governance/compliance-assurance/e-soc-corporate-records-entity-management",
+            "items": []
+          },
+          {
+            "text": "Related Parties List",
+            "url": "https://no-host-siteset/en/topbar-menu/governance/compliance-assurance/related-parties-list",
+            "items": []
+          },
+          {
+            "text": "SOX Matrixes",
+            "url": "https://no-host-siteset/en/topbar-menu/governance/compliance-assurance/sox-matrixes",
+            "items": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Management Control",
+    "items": [
+      {
+        "text": "UPF",
+        "iconUrl": "/public/images/Iconos_GAP-04.svg",
+        "url": "https://no-host-siteset/en/topbar-menu/management-control/upf",
+        "items": [
+          {
+            "text": "TEC meeting",
+            "url": "https://no-host-siteset/en/topbar-menu/management-control/upf/tec-meeting",
+            "items": []
+          },
+          {
+            "text": "Budget",
+            "url": "https://no-host-siteset/en/topbar-menu/management-control/upf/budget",
+            "items": []
+          },
+          {
+            "text": "Key Reports",
+            "url": "https://no-host-siteset/en/topbar-menu/management-control/upf/key-reports",
+            "items": []
+          },
+          {
+            "text": "Area managers",
+            "url": "https://no-host-siteset/en/topbar-menu/management-control/upf/area-managers",
+            "items": [
+              {
+                "text": "Canada",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/upf/area-managers/canada"
+              },
+              {
+                "text": "USA",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/upf/area-managers/usa"
+              },
+              {
+                "text": "Mexico",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/upf/area-managers/mexico"
+              },
+              {
+                "text": "Andean",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/upf/area-managers/andean"
+              },
+              {
+                "text": "Brazil",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/upf/area-managers/brazil"
+              },
+              {
+                "text": "Southern Cone",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/upf/area-managers/southern-cone"
+              },
+              {
+                "text": "EE, NS \u0026 SSA",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/upf/area-managers/ee-ns-ssa"
+              },
+              {
+                "text": "Europe",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/upf/area-managers/europe"
+              },
+              {
+                "text": "Saudi Arabia",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/upf/area-managers/saudi-arabia"
+              },
+              {
+                "text": "ME \u0026 Asia",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/upf/area-managers/me-asia"
+              }
+            ]
+          },
+          {
+            "text": "Functional Areas",
+            "url": "https://no-host-siteset/en/topbar-menu/management-control/upf/functional-areas",
+            "items": [
+              {
+                "text": "Industrial",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/upf/functional-areas/industrial"
+              },
+              {
+                "text": "Quality",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/upf/functional-areas/quality"
+              },
+              {
+                "text": "Supply Chain",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/upf/functional-areas/supply-chain"
+              },
+              {
+                "text": "Adm. \u0026 Finance",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/upf/functional-areas/adm-finance"
+              },
+              {
+                "text": "Commercial",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/upf/functional-areas/commercial"
+              },
+              {
+                "text": "Human Resources",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/upf/functional-areas/human-resources"
+              },
+              {
+                "text": "Market",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/upf/functional-areas/market"
+              },
+              {
+                "text": "Technology",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/upf/functional-areas/technology"
+              },
+              {
+                "text": "Information Technology",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/upf/functional-areas/information-technology"
+              },
+              {
+                "text": "Internal Audit",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/upf/functional-areas/internal-audit"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Project Portfolio Management",
+        "iconUrl": "/public/images/Iconos_GAP-02.svg",
+        "url": "https://no-host-siteset/en/topbar-menu/management-control/project-portfolio-management",
+        "items": [
+          {
+            "text": "Strategic Programs",
+            "url": "https://no-host-siteset/en/topbar-menu/management-control/project-portfolio-management/strategic-programs",
+            "items": []
+          },
+          {
+            "text": "Project Portfolios",
+            "url": "https://no-host-siteset/en/topbar-menu/management-control/project-portfolio-management/project-portfolios",
+            "items": [
+              {
+                "text": "ENGI",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/project-portfolio-management/project-portfolios/engi"
+              },
+              {
+                "text": "PDP",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/project-portfolio-management/project-portfolios/pdp"
+              },
+              {
+                "text": "IT",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/project-portfolio-management/project-portfolios/it"
+              },
+              {
+                "text": "Improvement Initiatives",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/project-portfolio-management/project-portfolios/improvement-initiatives"
+              }
+            ]
+          },
+          {
+            "text": "Project Portfolios (1)",
+            "url": "https://no-host-siteset/en/topbar-menu/management-control/project-portfolio-management/project-portfolios-1",
+            "items": []
+          },
+          {
+            "text": "Improvement Initiatives",
+            "url": "https://no-host-siteset/en/topbar-menu/management-control/project-portfolio-management/improvement-initiatives",
+            "items": []
+          }
+        ]
+      },
+      {
+        "text": "Departmental Sites",
+        "iconUrl": "/public/images/Iconos_GAP-11.svg",
+        "url": "https://no-host-siteset/en/topbar-menu/management-control/departmental-sites",
+        "items": [
+          {
+            "text": "Departments",
+            "url": "https://no-host-siteset/en/topbar-menu/management-control/departmental-sites/departments",
+            "items": [
+              {
+                "text": "Administration and Finance",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/departmental-sites/departments/administration-and-finance"
+              },
+              {
+                "text": "Internal Audit",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/departmental-sites/departments/internal-audit"
+              },
+              {
+                "text": "Business Conduct Compliance Officer",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/departmental-sites/departments/business-conduct-compliance-officer"
+              },
+              {
+                "text": "Health, Safety and Environment",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/departmental-sites/departments/health-safety-and-environment"
+              },
+              {
+                "text": "Human Resources",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/departmental-sites/departments/human-resources"
+              },
+              {
+                "text": "Industrial",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/departmental-sites/departments/industrial"
+              },
+              {
+                "text": "Investor Relations",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/departmental-sites/departments/investor-relations"
+              },
+              {
+                "text": "Marketing",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/departmental-sites/departments/marketing"
+              },
+              {
+                "text": "Process Improvement and IT",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/departmental-sites/departments/process-improvement-and-it"
+              },
+              {
+                "text": "Quality",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/departmental-sites/departments/quality"
+              },
+              {
+                "text": "Technology",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/departmental-sites/departments/technology"
+              }
+            ]
+          },
+          {
+            "text": "Regions",
+            "url": "https://no-host-siteset/en/topbar-menu/management-control/departmental-sites/regions",
+            "items": [
+              {
+                "text": "Brazil",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/departmental-sites/regions/brazil"
+              },
+              {
+                "text": "AMSA",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/departmental-sites/regions/amsa"
+              },
+              {
+                "text": "East Europe, NS \u0026 SSA",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/departmental-sites/regions/east-europe-ns-ssa"
+              },
+              {
+                "text": "Andean",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/departmental-sites/regions/andean"
+              },
+              {
+                "text": "Southern Cone",
+                "url": "https://no-host-siteset/en/topbar-menu/management-control/departmental-sites/regions/southern-cone"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "HSE",
+        "iconUrl": "/public/images/Iconos_GAP-03.svg",
+        "url": "https://no-host-siteset/en/topbar-menu/management-control/hse",
+        "items": [
+          {
+            "text": "TSE - Tenaris Safety and Environment",
+            "url": "https://no-host-siteset/en/topbar-menu/management-control/hse/tse-tenaris-safety-and-environment",
+            "items": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Service Center",
+    "items": [
+      {
+        "text": "Human Resources ",
+        "iconUrl": "/public/images/Iconos_GAP-06.svg",
+        "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources",
+        "items": [
+          {
+            "text": "Organizational chart",
+            "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources/organizational-chart",
+            "items": []
+          },
+          {
+            "text": "Executive Announcements",
+            "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources/executive-announcements",
+            "items": []
+          },
+          {
+            "text": "Performance Mgmt Experience",
+            "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources/performance-mgmt-experience",
+            "items": []
+          },
+          {
+            "text": "My HR Portal",
+            "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources/my-hr-portal",
+            "items": []
+          },
+          {
+            "text": "TenarisUniversity Campus",
+            "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources/tenarisuniversity-campus",
+            "items": []
+          },
+          {
+            "text": "Regional Service Centers",
+            "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources/regional-service-centers",
+            "items": [
+              {
+                "text": "Argentina",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources/regional-service-centers/argentina"
+              },
+              {
+                "text": "Canada",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources/regional-service-centers/canada"
+              },
+              {
+                "text": "Andean",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources/regional-service-centers/andean"
+              },
+              {
+                "text": "Italy",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources/regional-service-centers/italy"
+              },
+              {
+                "text": "Mexico",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources/regional-service-centers/mexico"
+              },
+              {
+                "text": "Romania",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources/regional-service-centers/romania"
+              },
+              {
+                "text": "USA",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources/regional-service-centers/usa"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "Information Technology",
+        "iconUrl": "/public/images/Iconos_GAP-07.svg",
+        "url": "https://no-host-siteset/en/topbar-menu/service-center/information-technology",
+        "items": [
+          {
+            "text": "My IT Service Portal",
+            "url": "https://no-host-siteset/en/topbar-menu/service-center/information-technology/my-it-service-portal",
+            "items": []
+          },
+          {
+            "text": "How do I (Spanish)",
+            "url": "https://no-host-siteset/en/topbar-menu/service-center/information-technology/how-do-i-spanish",
+            "items": []
+          },
+          {
+            "text": "How do I (English)",
+            "url": "https://no-host-siteset/en/topbar-menu/service-center/information-technology/how-do-i-english",
+            "items": []
+          },
+          {
+            "text": "TOT - IT Security",
+            "url": "https://no-host-siteset/en/topbar-menu/service-center/information-technology/tot-it-security",
+            "items": []
+          },
+          {
+            "text": "My Software Center (Windows)",
+            "url": "https://no-host-siteset/en/topbar-menu/service-center/information-technology/my-software-center-windows",
+            "items": []
+          },
+          {
+            "text": "My Devices",
+            "url": "https://no-host-siteset/en/topbar-menu/service-center/information-technology/my-devices",
+            "items": []
+          },
+          {
+            "text": "Citizen Development Program",
+            "url": "https://no-host-siteset/en/topbar-menu/service-center/information-technology/citizen-development-program",
+            "items": []
+          }
+        ]
+      },
+      {
+        "text": "Administrative Services",
+        "iconUrl": "/public/images/Iconos_GAP-08.svg",
+        "url": "https://no-host-siteset/en/topbar-menu/service-center/administrative-services",
+        "items": [
+          {
+            "text": "Global Business Services AP",
+            "url": "https://no-host-siteset/en/topbar-menu/service-center/administrative-services/global-business-services-ap",
+            "items": [
+              {
+                "text": "Advance Payments Requests",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/administrative-services/global-business-services-ap/advance-payments-requests"
+              },
+              {
+                "text": "Supplier Master Data Requests",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/administrative-services/global-business-services-ap/supplier-master-data-requests"
+              },
+              {
+                "text": "Special Payments Request App",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/administrative-services/global-business-services-ap/special-payments-request-app"
+              },
+              {
+                "text": "Payments Execution Requests",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/administrative-services/global-business-services-ap/payments-execution-requests"
+              },
+              {
+                "text": "Vendors Detail and Status",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/administrative-services/global-business-services-ap/vendors-detail-and-status"
+              }
+            ]
+          },
+          {
+            "text": "Global Business Services HR",
+            "url": "https://no-host-siteset/en/topbar-menu/service-center/administrative-services/global-business-services-hr",
+            "items": [
+              {
+                "text": "GBS HR Site",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/administrative-services/global-business-services-hr/gbs-hr-site"
+              }
+            ]
+          },
+          {
+            "text": "Suppliers",
+            "url": "https://no-host-siteset/en/topbar-menu/service-center/administrative-services/suppliers",
+            "items": [
+              {
+                "text": "Supplier\u00B4s Invitation",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/administrative-services/suppliers/supplier-s-invitation"
+              },
+              {
+                "text": "Supplier\u00B4s Extranet",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/administrative-services/suppliers/supplier-s-extranet"
+              },
+              {
+                "text": "See suppliers\u0027 status",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/administrative-services/suppliers/see-suppliers-status"
+              }
+            ]
+          },
+          {
+            "text": "Corporate Travel (Exiros)",
+            "url": "https://no-host-siteset/en/topbar-menu/service-center/administrative-services/corporate-travel-exiros",
+            "items": []
+          }
+        ]
+      },
+      {
+        "text": "Communications Tools",
+        "iconUrl": "/public/images/Iconos_GAP-09.svg",
+        "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools",
+        "items": [
+          {
+            "text": "Brand Application",
+            "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/brand-application",
+            "items": []
+          },
+          {
+            "text": "Office Tools",
+            "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/office-tools",
+            "items": []
+          },
+          {
+            "text": "Intranet Links",
+            "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/intranet-links",
+            "items": [
+              {
+                "text": "APSOT",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/intranet-links/apsot"
+              },
+              {
+                "text": "Beneficios Arg/Tenaris",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/intranet-links/beneficios-argtenaris"
+              },
+              {
+                "text": "BOIN",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/intranet-links/boin"
+              },
+              {
+                "text": "Community Relations",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/intranet-links/community-relations"
+              },
+              {
+                "text": "Controllership",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/intranet-links/controllership"
+              },
+              {
+                "text": "Corporate Travel",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/intranet-links/corporate-travel"
+              },
+              {
+                "text": "DIAMM",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/intranet-links/diamm"
+              },
+              {
+                "text": "DINT",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/intranet-links/dint"
+              },
+              {
+                "text": "DIRAR",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/intranet-links/dirar"
+              },
+              {
+                "text": "DITRI",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/intranet-links/ditri"
+              },
+              {
+                "text": "EXIROS",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/intranet-links/exiros"
+              },
+              {
+                "text": "Intranet Seame",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/intranet-links/intranet-seame"
+              },
+              {
+                "text": "Learning Center",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/intranet-links/learning-center"
+              },
+              {
+                "text": "Rassegna Stampa Tenaris",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/intranet-links/rassegna-stampa-tenaris"
+              },
+              {
+                "text": "Santa Maria",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/intranet-links/santa-maria"
+              },
+              {
+                "text": "SERGE",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/intranet-links/serge"
+              },
+              {
+                "text": "Techint Online",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/intranet-links/techint-online"
+              },
+              {
+                "text": "TechintToday",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/intranet-links/techinttoday"
+              },
+              {
+                "text": "Tecpetrol",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/intranet-links/tecpetrol"
+              },
+              {
+                "text": "Tecsis",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/intranet-links/tecsis"
+              },
+              {
+                "text": "Tenova Intranet",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/intranet-links/tenova-intranet"
+              },
+              {
+                "text": "TerniumHoy",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/intranet-links/terniumhoy"
+              }
+            ]
+          },
+          {
+            "text": "Internet Links",
+            "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/internet-links",
+            "items": [
+              {
+                "text": "APSOT",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/internet-links/apsot"
+              },
+              {
+                "text": "Exiros",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/internet-links/exiros"
+              },
+              {
+                "text": "Fondazione Dalmine",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/internet-links/fondazione-dalmine"
+              },
+              {
+                "text": "Fondazione Humanitas",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/internet-links/fondazione-humanitas"
+              },
+              {
+                "text": "Fundaci\u00F3n PROA",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/internet-links/fundacion-proa"
+              },
+              {
+                "text": "Humanitas",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/internet-links/humanitas"
+              },
+              {
+                "text": "Humanitas Gavazzeni",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/internet-links/humanitas-gavazzeni"
+              },
+              {
+                "text": "Humanitas Salute",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/internet-links/humanitas-salute"
+              },
+              {
+                "text": "Litoral Gas",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/internet-links/litoral-gas"
+              },
+              {
+                "text": "Programa ProPymes",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/internet-links/programa-propymes"
+              },
+              {
+                "text": "Roberto Rocca Program",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/internet-links/roberto-rocca-program"
+              },
+              {
+                "text": "Techint",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/internet-links/techint"
+              },
+              {
+                "text": "Techint Careers",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/internet-links/techint-careers"
+              },
+              {
+                "text": "Techint E\u0026C",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/internet-links/techint-ec"
+              },
+              {
+                "text": "Tecpetrol",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/internet-links/tecpetrol"
+              },
+              {
+                "text": "Tenaris",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/internet-links/tenaris"
+              },
+              {
+                "text": "Tenova",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/internet-links/tenova"
+              },
+              {
+                "text": "Ternium",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/internet-links/ternium"
+              },
+              {
+                "text": "Tesur",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/internet-links/tesur"
+              },
+              {
+                "text": "TGN",
+                "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/internet-links/tgn"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

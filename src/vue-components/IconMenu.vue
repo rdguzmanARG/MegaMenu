@@ -2,7 +2,8 @@
 export default {
   name: "IconMenu",
   props: {
-    iconClass: { type: String, required: true },
+    iconClass: { type: String, required: false },
+    iconUrl: { type: String, required: false },
     label: { type: String, required: true },
     url: { type: String, required: true },
   },
@@ -16,11 +17,13 @@ export default {
 
 <template>
   <div @mouseenter="toggleMenu" class="mm-item-desktop mm-icon">
-    <i :class="iconClass"></i>
+    <div class="mm-icon-svg" v-if="iconUrl" :style="{ backgroundImage: `url(${iconUrl})` }"></div>
+    <i v-else :class="iconClass"></i>
     <a :href="url" target="_blank">{{ label }}</a>
   </div>
   <div @click="toggleMenu" class="mm-item-mobile mm-icon">
-    <i :class="iconClass"></i>
+    <div class="mm-icon-svg" v-if="iconUrl" :style="{ backgroundImage: `url(${iconUrl})` }"></div>
+    <i v-else :class="iconClass"></i>
     <a :href="url" target="_blank">{{ label }}</a>
   </div>
 </template>
