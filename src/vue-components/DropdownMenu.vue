@@ -46,7 +46,7 @@ export default {
 
 <template>
   <div class="mm-options">
-    <span class="mm-options-desktop" @mouseenter="openMenu(); selectedIndex = null;">{{ label
+    <span class="mm-options-desktop" @mouseenter="openMenu(); selectedIndex = 0;">{{ label
     }}</span>
     <span class="mm-options-mobile" @click="toggleMenu(); selectedIndex = null;">{{ label
     }}</span>
