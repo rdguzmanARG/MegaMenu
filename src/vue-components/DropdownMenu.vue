@@ -49,7 +49,7 @@ export default {
     <span class="mm-options-desktop" @mouseenter="openMenu(); selectedIndex = 0;">{{ label
     }}</span>
     <span class="mm-options-mobile" @click="toggleMenu(); selectedIndex = null;">{{ label
-    }}</span>
+    }}<i class="fas fa-chevron-down mm-mobile-arrow" :class="{ 'mm-mobile-arrow--open': isOpen }"></i></span>
     <div v-if="isOpen" class="mm-options-container">
       <div class="mm-options-desktop-n1" @mouseenter="openSelection(index)"
         :class="{ 'selected': selectedIndex === index }" v-for="(item, index) in items" :key="index">

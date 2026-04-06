@@ -166,7 +166,7 @@
 
   //color: $mm-color;
 
-  span::after {
+  .mm-options-desktop::after {
     //color: $mm-color;
     font-style: normal;
     font-variant: normal;
@@ -180,6 +180,10 @@
     margin-left: 10px;
     position: relative;
   }
+}
+
+.mm-mobile-arrow--open {
+  transform: rotate(180deg);
 }
 
 .mm-options-desktop {
