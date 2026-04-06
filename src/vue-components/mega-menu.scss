@@ -182,6 +182,10 @@
   }
 }
 
+.mm-mobile-arrow {
+  transition: transform 300ms ease-in-out;
+}
+
 .mm-mobile-arrow--open {
   transform: rotate(180deg);
 }
