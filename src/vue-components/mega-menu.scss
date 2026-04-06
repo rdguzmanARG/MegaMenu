@@ -277,6 +277,26 @@
 .mm-options-n1-title {
   color: #333;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+
+  .mm-mobile-arrow {
+    display: none;
+    margin-left: auto;
+    font-size: 12px;
+    color: #666;
+    transition: transform 300ms ease-in-out;
+
+    @media screen and (max-width: 1024px) {
+      display: inline-block;
+    }
+  }
+}
+
+.mm-options-mobile-n1.selected .mm-mobile-arrow {
+  transform: rotate(180deg);
 }
 
 .mm-options-n1-container {

@@ -76,6 +76,7 @@ export default {
         <div class="mm-options-n1-title">
           <div class="mm-icon-svg" v-if="item.iconUrl" :style="{ backgroundImage: `url(${item.iconUrl})` }"></div>
           <i v-else :class="item.iconClass"></i> {{ item.text }}
+          <i v-if="item.items && item.items.length > 0" class="fas fa-chevron-down mm-mobile-arrow"></i>
         </div>
         <div v-if="item.items && item.items.length > 0" class="mm-options-n1-container">
 
