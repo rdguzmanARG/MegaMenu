@@ -135,13 +135,19 @@
   .mm-hamburger-title {
     display: none;
     color: $mm-color;
+    gap: 8px;
     @media screen and (max-width: 1024px) {
-      display: inline-block;
       width: fit-content;
       margin: 10px;
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+
+    .mm-logo {
+      height: 22px;
+      width: auto;
+      filter: invert(1);
     }
   }
 }
@@ -419,7 +425,9 @@
   .mm-search-input-wrapper {
     overflow: hidden;
     width: 0;
-    transition: width 300ms ease-in-out, opacity 300ms ease-in-out;
+    transition:
+      width 300ms ease-in-out,
+      opacity 300ms ease-in-out;
     opacity: 0;
 
     @media screen and (max-width: 1024px) {

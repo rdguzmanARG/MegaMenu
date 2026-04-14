@@ -13,7 +13,7 @@ export interface MenuItem {
 }
 export default {
   components: { DropdownMenu, IconMenu, SearchMenu },
-  props: ['items'],
+  props: ['items', 'title', 'logoUrl'],
   data() {
     return {
       openMenu: null as string | null,
@@ -66,7 +66,10 @@ export default {
     <div class="mm-hamburger" :class="{ active: mobileMenuIsOpen }" @click="openMobileMenu">
       <span></span>
     </div>
-    <div class="mm-hamburger-title">Intra - Ternium</div>
+    <div class="mm-hamburger-title">
+      <img v-if="logoUrl" :src="logoUrl" class="mm-logo" alt="Logo" />
+      <span v-if="title">{{ title }}</span>
+    </div>
   </div>
   <div @mouseenter="close" v-show="openMenu !== null" class="mm-backround">
   </div>
