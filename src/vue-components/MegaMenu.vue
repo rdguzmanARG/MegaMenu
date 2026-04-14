@@ -1,6 +1,7 @@
 <script lang="ts">
 import DropdownMenu from "./DropdownMenu.vue";
 import IconMenu from "./IconMenu.vue";
+import SearchMenu from "./SearchMenu.vue";
 import "./mega-menu.scss";
 
 export interface MenuItem {
@@ -11,7 +12,7 @@ export interface MenuItem {
   items?: MenuItem[];
 }
 export default {
-  components: { DropdownMenu, IconMenu },
+  components: { DropdownMenu, IconMenu, SearchMenu },
   props: ['items'],
   data() {
     return {
@@ -37,6 +38,9 @@ export default {
       console.log(`Selected "${value}" from "${label}"`);
       //this.openMenu = null; // close after selection
     },
+    handleSearch(query: string) {
+      console.log(`Search query: "${query}"`);
+    },
     close() {
       this.openMenu = null; // close after selection
       this.mobileMenuIsOpen = false;
@@ -57,6 +61,7 @@ export default {
         <IconMenu v-else :url="item.url" :label="item.text" :iconUrl="item.iconUrl" :iconClass="item.iconClass"
           @toggle="handleToggle" />
       </div>
+      <SearchMenu @search="handleSearch" />
     </div>
     <div class="mm-hamburger" :class="{ active: mobileMenuIsOpen }" @click="openMobileMenu">
       <span></span>
