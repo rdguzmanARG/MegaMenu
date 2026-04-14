@@ -1,5 +1,5 @@
-@use './tenaris-today.scss' as *;
-//@use './ternium-hoy.scss' as *;
+//@use './tenaris-today.scss' as *;
+@use './ternium-hoy.scss' as *;
 
 .mm-container {
   z-index: 10;
@@ -147,7 +147,6 @@
     .mm-logo {
       height: 22px;
       width: auto;
-      filter: invert(1);
     }
   }
 }
@@ -444,17 +443,17 @@
 
   .mm-search-input {
     border: none;
-    border-bottom: 1px solid rgba($mm-color, 0.7);
+    border-bottom: 1px solid rgba($mm-color, 0.8);
     background: transparent;
     color: $mm-color;
     padding: 3px 6px;
     outline: none;
     width: 100%;
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 
     &::placeholder {
-      color: rgba($mm-color, 0.55);
+      color: rgba($mm-color, 0.5);
     }
   }
 
