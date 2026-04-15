@@ -1,0 +1,39 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow.json
+name: Deploy Node.js to SmarterASP.NET
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.20'
+
+      - name: Install and Build
+        run: |
+          yarn install
+          yarn run build
+
+      - name: Prepare deploy directory
+        run: |
+          mkdir -p ./megamenu
+          cp -r dist/. ./megamenu/
+
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: rdguzman-002-site5.stempurl.com
+          username: rdguzman-002
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./megamenu/
+          server-dir: /megamenu/
+          exclude: |
+            **/.git*
+            **/.git*/**      
