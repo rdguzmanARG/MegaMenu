@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import MegaMenu, { type MenuItem } from './vue-components/MegaMenu.vue';
 
-//import data from './data-tenaris.json';
-import data from './data-ternium.json';
+import data from './data-tenaris.json';
+//import data from './data-ternium.json';
 </script>
 
 <template>
