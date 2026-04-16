@@ -25,6 +25,7 @@ jobs:
         run: |
           mkdir -p ./megamenu
           cp -r dist/. ./megamenu/
+          cp -r public/. ./megamenu/public/
 
       - name: FTP Deploy
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
