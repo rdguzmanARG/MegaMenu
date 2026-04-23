@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import MegaMenu, { type MenuItem } from './vue-components/MegaMenu.vue';
+import MegaMenu from './vue-components/MegaMenu.vue';
+import FileUploadForm from './vue-components/FileUploadForm.vue';
 
 import data from './data-tenaris.json';
 //import data from './data-ternium.json';
@@ -7,4 +8,5 @@ import data from './data-tenaris.json';
 
 <template>
   <MegaMenu :items="data.items" :title="data.title" :logoUrl="data.logoUrl" />
+  <!-- <FileUploadForm /> -->
 </template>

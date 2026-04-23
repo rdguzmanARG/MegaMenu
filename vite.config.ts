@@ -17,4 +17,13 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+  server: {
+    proxy: {
+      '/umbraco': {
+        target: 'https://localhost:6001',
+        changeOrigin: true,
+        secure: false,   // accept self-signed cert on localhost
+      },
+    },
+  },
 })

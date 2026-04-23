@@ -318,11 +318,6 @@
           "url": "https://no-host-siteset/en/topbar-menu/management-control/project-portfolio-management",
           "items": [
             {
-              "text": "Strategic Programs",
-              "url": "https://no-host-siteset/en/topbar-menu/management-control/project-portfolio-management/strategic-programs",
-              "items": []
-            },
-            {
               "text": "Project Portfolios",
               "url": "https://no-host-siteset/en/topbar-menu/management-control/project-portfolio-management/project-portfolios",
               "items": [
@@ -345,14 +340,23 @@
               ]
             },
             {
-              "text": "Project Portfolios (1)",
-              "url": "https://no-host-siteset/en/topbar-menu/management-control/project-portfolio-management/project-portfolios-1",
-              "items": []
-            },
-            {
-              "text": "Improvement Initiatives",
-              "url": "https://no-host-siteset/en/topbar-menu/management-control/project-portfolio-management/improvement-initiatives",
-              "items": []
+              "items": [
+                {
+                  "text": "Strategic Programs",
+                  "url": "https://no-host-siteset/en/topbar-menu/management-control/project-portfolio-management/strategic-programs",
+                  "items": []
+                },
+                {
+                  "text": "Project Portfolios",
+                  "url": "https://no-host-siteset/en/topbar-menu/management-control/project-portfolio-management/project-portfolios-1",
+                  "items": []
+                },
+                {
+                  "text": "Improvement Initiatives",
+                  "url": "https://no-host-siteset/en/topbar-menu/management-control/project-portfolio-management/improvement-initiatives",
+                  "items": []
+                }
+              ]
             }
           ]
         },
@@ -462,31 +466,6 @@
           "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources",
           "items": [
             {
-              "text": "Organizational chart",
-              "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources/organizational-chart",
-              "items": []
-            },
-            {
-              "text": "Executive Announcements",
-              "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources/executive-announcements",
-              "items": []
-            },
-            {
-              "text": "Performance Mgmt Experience",
-              "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources/performance-mgmt-experience",
-              "items": []
-            },
-            {
-              "text": "My HR Portal",
-              "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources/my-hr-portal",
-              "items": []
-            },
-            {
-              "text": "TenarisUniversity Campus",
-              "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources/tenarisuniversity-campus",
-              "items": []
-            },
-            {
               "text": "Regional Service Centers",
               "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources/regional-service-centers",
               "items": [
@@ -519,6 +498,35 @@
                   "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources/regional-service-centers/usa"
                 }
               ]
+            },
+            {
+              "items": [
+                {
+                  "text": "Organizational chart",
+                  "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources/organizational-chart",
+                  "items": []
+                },
+                {
+                  "text": "Executive Announcements",
+                  "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources/executive-announcements",
+                  "items": []
+                },
+                {
+                  "text": "Performance Mgmt Experience",
+                  "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources/performance-mgmt-experience",
+                  "items": []
+                },
+                {
+                  "text": "My HR Portal",
+                  "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources/my-hr-portal",
+                  "items": []
+                },
+                {
+                  "text": "TenarisUniversity Campus",
+                  "url": "https://no-host-siteset/en/topbar-menu/service-center/human-resources/tenarisuniversity-campus",
+                  "items": []
+                }
+              ]
             }
           ]
         },
@@ -529,13 +537,11 @@
           "items": [
             {
               "text": "My IT Service Portal",
-              "url": "https://no-host-siteset/en/topbar-menu/service-center/information-technology/my-it-service-portal",
-              "items": []
+              "url": "https://no-host-siteset/en/topbar-menu/service-center/information-technology/my-it-service-portal"
             },
             {
               "text": "How do I (Spanish)",
-              "url": "https://no-host-siteset/en/topbar-menu/service-center/information-technology/how-do-i-spanish",
-              "items": []
+              "url": "https://no-host-siteset/en/topbar-menu/service-center/information-technology/how-do-i-spanish"
             },
             {
               "text": "How do I (English)",
@@ -635,16 +641,6 @@
           "iconUrl": "/public/images/Iconos_GAP-09.svg",
           "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools",
           "items": [
-            {
-              "text": "Brand Application",
-              "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/brand-application",
-              "items": []
-            },
-            {
-              "text": "Office Tools",
-              "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/office-tools",
-              "items": []
-            },
             {
               "text": "Intranet Links",
               "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/intranet-links",
@@ -822,6 +818,18 @@
                 {
                   "text": "TGN",
                   "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/internet-links/tgn"
+                }
+              ]
+            },
+            {
+              "items": [
+                {
+                  "text": "Brand Application",
+                  "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/brand-application"
+                },
+                {
+                  "text": "Office Tools",
+                  "url": "https://no-host-siteset/en/topbar-menu/service-center/communications-tools/office-tools"
                 }
               ]
             }

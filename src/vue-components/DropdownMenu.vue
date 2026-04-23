@@ -59,8 +59,7 @@ export default {
         <div v-if="item.items && item.items.length > 0" class="mm-options-n1-container">
 
           <div class="mm-options-n2" v-for="(subitem, index) in item.items" :key="index">
-            <div v-if="subitem.items && subitem.items?.length > 0" class="mm-options-n2-title">{{ subitem.text }} 2
-            </div>
+            <div v-if="subitem.items && subitem.items?.length > 0" class="mm-options-n2-title">{{ subitem.text }}</div>
             <a v-else class="mm-options-n2-link" :href="subitem.url" target="_blank">{{ subitem.text }}</a>
 
             <div v-if="subitem.items && subitem.items?.length > 0" class="mm-options-n2-container">
@@ -81,8 +80,7 @@ export default {
         <div v-if="item.items && item.items.length > 0" class="mm-options-n1-container">
 
           <div class="mm-options-n2" v-for="(subitem, index) in item.items" :key="index">
-            <div v-if="subitem.items && subitem.items?.length > 0" class="mm-options-n2-title">{{ subitem.text }} 2
-            </div>
+            <div v-if="subitem.items && subitem.items?.length > 0" class="mm-options-n2-title">{{ subitem.text }}</div>
             <a v-else class="mm-options-n2-link" :href="subitem.url" target="_blank">{{ subitem.text }}</a>
 
             <div class="mm-options-n2-container">

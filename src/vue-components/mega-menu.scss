@@ -1,6 +1,11 @@
 @use './tenaris-today.scss' as *;
 //@use './ternium-hoy.scss' as *;
-
+html,
+body {
+  margin: 0;
+  min-height: 100%; /* Ensures body can grow with content */
+  position: relative; /* Becomes the containing block for absolute children */
+}
 .mm-container {
   z-index: 10;
   height: 40px;
@@ -16,9 +21,13 @@
     height: 48px;
 
     &.active {
-      height: 100vh;
+      height: fit-content;
+      min-height: 100vh;
       background-color: #e8e8e8 !important;
-
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
       .mm-hamburger-title {
         display: none;
       }
@@ -282,7 +291,8 @@
     .mm-options-n1-container {
       display: flex;
       background: #f0f0f0;
-      flex-direction: column;
+      //flex-direction: column;
+      // gap: 20px;
       cursor: default;
     }
   }
@@ -320,22 +330,34 @@
   display: none;
   position: absolute;
   top: 0;
-  height: calc(100vh);
+  min-height: calc(100vh);
+
   left: 26%;
   padding: 15px;
   flex-wrap: wrap;
-
+  align-content: start;
   @media screen and (max-width: 1024px) {
     position: relative;
     height: unset;
     width: unset;
     left: unset;
+    flex-direction: column;
   }
 }
 
 .mm-options-n2 {
   padding: 5px;
   font-size: 14px;
+  flex: 1 1 calc(30%);
+  max-width: 33.33%;
+
+  &:only-child {
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: 1024px) {
+    max-width: unset;
+  }
 }
 .mm-options-n2-link {
   display: block;
