@@ -438,10 +438,9 @@ body {
   // On mobile it lives inside the vertical mm-content column
   @media screen and (max-width: 1024px) {
     margin-left: unset;
-    width: 50%;
     padding: 10px;
     box-sizing: border-box;
-    min-width: 200px;
+    width: 200px;
   }
 
   .mm-search-input-wrapper {
