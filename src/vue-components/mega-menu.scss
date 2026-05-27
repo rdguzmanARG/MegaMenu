@@ -393,6 +393,31 @@ body {
     font-weight: bold;
   }
 }
+
+.mm-options-n3-title {
+  display: block;
+  color: #666666;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.mm-options-n3-container {
+  padding-left: 10px;
+}
+
+.mm-options-n4-link {
+  display: block;
+  color: #888888;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  margin: 6px 0;
+  font-size: 13px;
+  &:hover {
+    font-weight: bold;
+  }
+}
 .mm-item-mobile {
   display: none;
 }

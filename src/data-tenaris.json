@@ -411,7 +411,17 @@
                 },
                 {
                   "text": "Technology",
-                  "url": "https://no-host-siteset/en/topbar-menu/management-control/departmental-sites/departments/technology"
+                  "url": "https://no-host-siteset/en/topbar-menu/management-control/departmental-sites/departments/technology",
+                  "items": [
+                    {
+                      "text": "MASE",
+                      "url": "https://no-host-siteset/en/topbar-menu/management-control/departmental-sites/departments/administration-and-finance"
+                    },
+                    {
+                      "text": "R&D",
+                      "url": "https://no-host-siteset/en/topbar-menu/management-control/departmental-sites/departments/administration-and-finance"
+                    }
+                  ]
                 }
               ]
             },

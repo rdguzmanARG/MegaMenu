@@ -63,8 +63,14 @@ export default {
             <a v-else class="mm-options-n2-link" :href="subitem.url" target="_blank">{{ subitem.text }}</a>
 
             <div v-if="subitem.items && subitem.items?.length > 0" class="mm-options-n2-container">
-              <a v-for="(subitem2, index) in subitem.items" :key="index" class="mm-options-n3-link" :href="subitem2.url"
-                target="_blank">{{ subitem2.text }}</a>
+              <div v-for="(subitem2, index) in subitem.items" :key="index" class="mm-options-n3">
+                <div v-if="subitem2.items && subitem2.items?.length > 0" class="mm-options-n3-title">{{ subitem2.text }}</div>
+                <a v-else class="mm-options-n3-link" :href="subitem2.url" target="_blank">{{ subitem2.text }}</a>
+                <div v-if="subitem2.items && subitem2.items?.length > 0" class="mm-options-n3-container">
+                  <a v-for="(subitem3, index3) in subitem2.items" :key="index3" class="mm-options-n4-link" :href="subitem3.url"
+                    target="_blank">{{ subitem3.text }}</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -84,8 +90,13 @@ export default {
             <a v-else class="mm-options-n2-link" :href="subitem.url" target="_blank">{{ subitem.text }}</a>
 
             <div class="mm-options-n2-container">
-              <div v-for="(subitem2, index) in subitem.items" :key="index">
-                <a class="mm-options-n3-link" :href="subitem2.url" target="_blank">{{ subitem2.text }}</a>
+              <div v-for="(subitem2, index) in subitem.items" :key="index" class="mm-options-n3">
+                <div v-if="subitem2.items && subitem2.items?.length > 0" class="mm-options-n3-title">{{ subitem2.text }}</div>
+                <a v-else class="mm-options-n3-link" :href="subitem2.url" target="_blank">{{ subitem2.text }}</a>
+                <div v-if="subitem2.items && subitem2.items?.length > 0" class="mm-options-n3-container">
+                  <a v-for="(subitem3, index3) in subitem2.items" :key="index3" class="mm-options-n4-link" :href="subitem3.url"
+                    target="_blank">{{ subitem3.text }}</a>
+                </div>
               </div>
             </div>
           </div>
